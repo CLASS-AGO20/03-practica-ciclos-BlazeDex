@@ -7,6 +7,19 @@ export default class App {
         return r;
     }
 
+    convertirAString(numero) {
+        let i = 1;
+        let string = "";
+        
+        while(i <= numero){
+            string = "*" +  string;
+
+            i++;
+        }
+        return string;
+
+    }
+
 
 
 
@@ -23,4 +36,5 @@ export default class App {
 let app = new App();
 console.log("Probando: factorial()");
 console.log(app.factorial(4));
-
+console.log("Probando: convertirAString()");
+console.log(app.convertirAString(6));
