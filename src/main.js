@@ -20,6 +20,19 @@ export default class App {
 
     }
 
+    obtenerDivisibles(numero) {
+        let i = numero;
+        let counter = 0;
+        let r = numero;
+         do {
+             if(r % i === 0) {
+                 counter = counter + 1;
+             }
+             i--;
+         } while(i >= 1)
+         return counter;
+    }
+
 
 
 
@@ -38,3 +51,5 @@ console.log("Probando: factorial()");
 console.log(app.factorial(4));
 console.log("Probando: convertirAString()");
 console.log(app.convertirAString(6));
+console.log("Probando: obtenerDivisibles()");
+console.log(app.obtenerDivisibles(10));
