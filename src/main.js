@@ -33,6 +33,15 @@ export default class App {
          return counter;
     }
 
+    elevar(numero, potencia) {
+        let m = 1;
+
+        for(let i = 1; i <= potencia; i++) {
+            m = m * numero;
+        }
+        return m;
+    }
+
 
 
 
@@ -53,3 +62,5 @@ console.log("Probando: convertirAString()");
 console.log(app.convertirAString(6));
 console.log("Probando: obtenerDivisibles()");
 console.log(app.obtenerDivisibles(10));
+console.log("Probando: elevar()");
+console.log(app.elevar(2, 4));
